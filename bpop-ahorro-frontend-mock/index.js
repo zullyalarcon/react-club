@@ -34,8 +34,8 @@ api.post('/bpop-ahorro-core/authenticate/login',(req,res)=> {
         identification: req.body.identification,
         office: req.body.office,
         name: 'Usuario',
-        role: 'ADVISER', // 'ADVISER' 'DEMO' 'SUPPORT'
-        token: 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDUzNDM0MDA1Iiwicm9sZXMiOlt7ImlkIjoiMSIsInJvbGUiOiJBRFZJU0VSIn1dLCJleHAiOjE1ODg5NTQyNDYsImlhdCI6MTU4ODk1MDY0Nn0.dT1Oqjw32Vpnwpp3Iz9Ka2YQQW71-vI2wGvwbqzgGDI',
+        role: 'CUSTOMER', // 'ADVISER' 'DEMO' 'SUPPORT'
+        token: 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzNjU0MDM5NCIsInJvbGVzIjpbeyJpZCI6IjMiLCJyb2xlIjoiQ1VTVE9NRVIifV0sImV4cCI6MTU4OTk5MjI4OCwiaWF0IjoxNTg5OTg4Njg4fQ.LUoCxSLRmLU9OzHu4ptnY_mQnlD230D_rMTEmzPNHrE',
         status: 'true',
         code: '200',
         message: 'Autenticación exitosa',
@@ -148,9 +148,9 @@ api.post('/bpop-ahorro-core/account/save',(_,res)=> {
     res.send(data);
 });
 
-api.get('/bpop-ahorro-core/catalog/getAgreements/',(req,res)=> {
+api.get('/bpop-ahorro-core/catalog/getAgreements/:type',(req,res)=> {
     res.status(200);
-    switch (req.body.type) {
+    switch (req.params.type) {
         case '581':
             agreemData = [
             {
@@ -185,7 +185,7 @@ api.get('/bpop-ahorro-core/catalog/getAgreements/',(req,res)=> {
             },
             { code: '020', name: 'Conal', text: null, reference: '001' },
             { code: '037', name: 'Corbic', text: null, reference: '001' },
-            { code: '5896', name: 'Colpensiones', text: null, reference: '001' },
+            { code: '5896', name: 'COLPENSIONES', text: null, reference: '001' },
             ];
             break;
         default:
@@ -197,7 +197,7 @@ api.get('/bpop-ahorro-core/catalog/getAgreements/',(req,res)=> {
     res.send(agreemData);
 });
 
-api.get('/bpop-ahorro-core/catalog/getBenefitsByAgreement/',(req,res)=> {
+api.get('/bpop-ahorro-core/catalog/getBenefitsByAgreement/:benefitId',(req,res)=> {
     res.status(200);
     let agreeById = {
         code: '001',
@@ -211,9 +211,9 @@ api.get('/bpop-ahorro-core/catalog/getBenefitsByAgreement/',(req,res)=> {
         ],
         reference: null,
     };
-    if (req.body.benefitId === '003') {
+    if (req.params.benefitId === '002') {
         agreeById = {
-            code: '003',
+            code: '002',
             name: null,
             text: [
                 '$10900 cuota de manejo y administración.',
@@ -223,7 +223,7 @@ api.get('/bpop-ahorro-core/catalog/getBenefitsByAgreement/',(req,res)=> {
             reference: null,
         };
     }
-    if (req.body.benefitId === '005') {
+    if (req.params.benefitId === '003') {
         agreeById = {
             code: '003',
             name: null,
