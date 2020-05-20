@@ -7,22 +7,26 @@ api.use(parser.json(), cors());
 
 const port = 8001;
 
-api.post('/bpop-ahorro-core/catalog/getOffices',(_,res)=> {
+api.get('/bpop-ahorro-core/catalog/getOffices',(_,res)=> {
     res.status(200);
-    const data = [
-        {
-            code: '001',
-            name: '009 - TEUSAQUILLO',
-            text: null,
-            reference: null,
-        },
-        {
-            code: '002',
-            name: '011 - ANTIGUO COUNTRY',
-            text: null,
-            reference: null,
-        },
-    ];
+    const data = {
+        catalog: [
+            {
+              id: 2153,
+              name: 'BranchId',
+              key: 'ACACIAS',
+              value: '411',
+              description: 'ACACIAS'
+            },
+            {
+              id: 2156,
+              name: 'BranchId',
+              key: 'AGUA DE DIOS',
+              value: '61',
+              description: 'AGUA DE DIOS'
+            }
+        ]
+     };
     res.send(data)
 });
 
