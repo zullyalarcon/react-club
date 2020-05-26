@@ -7,7 +7,7 @@ api.use(parser.json(), cors());
 
 const port = 8001;
 
-api.get('/bpop-ahorro-core/catalog/getOffices',(_,res)=> {
+api.get('/bpop-ahorro-core/catalog/branchId',(_,res)=> {
     res.status(200);
     const data = {
         catalog: [
@@ -241,15 +241,100 @@ api.get('/bpop-ahorro-core/catalog/getBenefitsByAgreement/:benefitId',(req,res)=
     res.send(agreeById);
 });
 
-api.post('/bpop-ahorro-core/catalog/getCivilStatus',(_,res)=> {
+api.get('/bpop-ahorro-core/catalog/PersonalDataMaritalStatus',(_,res)=> {
     res.status(200);
-    let civilArray = [
-        { code: '001', name: 'Casado', text: null, reference: null },
-        { code: '002', name: 'Soltero', text: null, reference: null },
-        { code: '004', name: 'Separado', text: null, reference: null },
-    ];
+    let civilArray = {
+        catalog: [
+            {
+                id: 21,
+                name: "PersonalDataMaritalStatus",
+                key: "Casado",
+                value: "2",
+                description: "Casado"
+            },
+            {
+                id: 23,
+                name: "PersonalDataMaritalStatus",
+                key: "Divorciado",
+                value: "4",
+                description: "Divorciado"
+            },
+            {
+                id: 18,
+                name: "PersonalDataMaritalStatus",
+                key: "NDCRM",
+                value: "ND",
+                description: "No disponible crm"
+            },
+            {
+                id: 19,
+                name: "PersonalDataMaritalStatus",
+                key: "Otro",
+                value: "0",
+                description: "Otro"
+            },
+            {
+                id: 22,
+                name: "PersonalDataMaritalStatus",
+                key: "Separado",
+                value: "3",
+                description: "Separado"
+            },
+            {
+                id: 20,
+                name: "PersonalDataMaritalStatus",
+                key: "Soltero",
+                value: "1",
+                description: "Soltero"
+            },
+            {
+                id: 25,
+                name: "PersonalDataMaritalStatus",
+                key: "U. Libre",
+                value: "6",
+                description: "Union Libre"
+            },
+            {
+                id: 24,
+                name: "PersonalDataMaritalStatus",
+                key: "Viudo",
+                value: "5",
+                description: "Viudo"
+            }
+        ]
+    };
     res.send(civilArray);
-});
+})
+
+api.get('/bpop-ahorro-core/catalog/PersonalDataGender',(_,res)=> {
+    res.status(200);
+    let genderArray = {
+        catalog: [
+            {
+                id: 26,
+                name: "PersonalDataGender",
+                key: "Femenino",
+                value: "F",
+                description: "Femenino"
+            },
+            {
+                id: 27,
+                name: "PersonalDataGender",
+                key: "Masculino",
+                value: "M",
+                description: "Masculino"
+            },
+            {
+                id: 28,
+                name: "PersonalDataGender",
+                key: "NDCRM",
+                value: "N",
+                description: "No disponible crm"
+            }
+        ]
+    }
+    res.send(genderArray);
+})
 
 api.get('/bpop-ahorro-core/catalog/getAllCities',(_,res)=> {
     res.status(200);
