@@ -426,6 +426,107 @@ api.get('/bpop-ahorro-core/catalog/getAllEconomicActivites',(_,res)=> {
     res.send(economicActivities);
 });
 
+api.get('/bpop-ahorro-core/catalog/getAddressPrefixValues',(_,res)=> {
+    res.status(200);
+    const prefix = [
+        {
+            id: 1,
+            code: 'AC',
+            status: '1',
+            value: 'Avenida Calle',
+            type: 'PREFIX_ADDRESS',
+            searchChain: null,
+        },
+        {
+            id: 2,
+            code: 'KR',
+            status: '1',
+            value: 'Carrera',
+            type: 'PREFIX_ADDRESS',
+            searchChain: null,
+        },
+        {
+            id: 3,
+            code: 'CL',
+            status: '1',
+            value: 'Calle',
+            type: 'PREFIX_ADDRESS',
+            searchChain: null,
+        },
+        {
+            id: 4,
+            code: 'AV E',
+            status: '1',
+            value: 'Avenida Esperanza',
+            type: 'PREFIX_ADDRESS',
+            searchChain: null,
+        },
+    ]
+    res.send(prefix);
+});
+
+api.get('/bpop-ahorro-core/catalog/getAddressPrefixValues',(_,res)=> {
+    res.status(200);
+    const prefix = [
+        {
+            id: 1,
+            code: 'AC',
+            status: '1',
+            value: 'Avenida Calle',
+            type: 'PREFIX_ADDRESS',
+            searchChain: null,
+        },
+        {
+            id: 2,
+            code: 'KR',
+            status: '1',
+            value: 'Carrera',
+            type: 'PREFIX_ADDRESS',
+            searchChain: null,
+        },
+        {
+            id: 3,
+            code: 'CL',
+            status: '1',
+            value: 'Calle',
+            type: 'PREFIX_ADDRESS',
+            searchChain: null,
+        },
+        {
+            id: 4,
+            code: 'AV E',
+            status: '1',
+            value: 'Avenida Esperanza',
+            type: 'PREFIX_ADDRESS',
+            searchChain: null,
+        },
+    ]
+    res.send(prefix);
+});
+
+api.get('/bpop-ahorro-core/catalog/getAddressSufixValues',(_,res)=> {
+    res.status(200);
+    const sufix = [
+        {
+            id: 45,
+            code: 'BIS',
+            status: '1',
+            value: 'Bis',
+            type: 'SUFIX_ADDRESS',
+            searchChain: null,
+        },
+        {
+            id: 46,
+            code: 'A',
+            status: '1',
+            value: 'A',
+            type: 'SUFIX_ADDRESS',
+            searchChain: null,
+        },
+    ]
+    res.send(sufix);
+});
+
 api.get('/bpop-ahorro-core/catalog/getDepartmentByCityCode/',(_,res)=> {
     res.status(200);
     const deptArray = [
