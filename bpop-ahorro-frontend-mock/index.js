@@ -241,6 +241,16 @@ api.get('/bpop-ahorro-core/catalog/getBenefitsByAgreement/:benefitId',(req,res)=
     res.send(agreeById);
 });
 
+api.post('/bpop-ahorro-core/catalog/getCivilStatus',(_,res)=> {
+    res.status(200);
+    const data = [
+        { code: '001', name: 'Casado', text: null, reference: null },
+        { code: '002', name: 'Soltero', text: null, reference: null },
+        { code: '004', name: 'Separado', text: null, reference: null },
+    ];
+    res.send(data);
+});
+
 api.get('/bpop-ahorro-core/catalog/PersonalDataMaritalStatus',(_,res)=> {
     res.status(200);
     let civilArray = {
@@ -362,6 +372,58 @@ api.get('/bpop-ahorro-core/catalog/getAllCities',(_,res)=> {
         },
     ]
     res.send(cityArray);
+});
+
+api.get('/bpop-ahorro-core/catalog/getAllActivities',(_,res)=> {
+    res.status(200);
+    const occupation = [
+        { code: '002', name: 'EMPLEADO', text: null, reference: null },
+        { code: '003', name: 'INDEPENDIENTE', text: null, reference: null },
+        { code: '005', name: 'PENSIONADO', text: null, reference: null },
+    ]
+    res.send(occupation);
+});
+
+api.get('/bpop-ahorro-core/catalog/getAllEconomicActivites',(_,res)=> {
+    res.status(200);
+    const economicActivities = [
+        {
+            code: '001',
+            name: 'ACABADO DE PRODUCTOS TEXTILES',
+            text: null,
+            reference: null,
+            sarlaftRestrictive: 'false',
+          },
+          {
+            code: '034',
+            name: 'ACTIVIDADES DE CONTABILIDAD',
+            text: null,
+            reference: null,
+            sarlaftRestrictive: 'false',
+          },
+          {
+            code: '077',
+            name: 'ACTIVIDADES DE TELECOMUNICACIONES ALÁMBRICAS',
+            text: null,
+            reference: null,
+            sarlaftRestrictive: 'false',
+          },
+          {
+            code: '224',
+            name: 'EDUCACIÓN PREESCOLAR',
+            text: null,
+            reference: null,
+            sarlaftRestrictive: 'false',
+          },
+          {
+            code: '301',
+            name: 'FABRICACIÓN DE EQUIPOS DE COMUNICACIÓN',
+            text: null,
+            reference: null,
+            sarlaftRestrictive: 'false',
+          },
+    ]
+    res.send(economicActivities);
 });
 
 api.get('/bpop-ahorro-core/catalog/getDepartmentByCityCode/',(_,res)=> {
