@@ -384,6 +384,48 @@ api.get('/bpop-ahorro-core/catalog/getAllActivities',(_,res)=> {
     res.send(occupation);
 });
 
+api.get('/bpop-ahorro-core/catalog/getAllEducationalLevels',(_,res)=> {
+    res.status(200);
+    const educationalLevels = [
+        { code: '001', name: 'Basico', text: null, reference: null },
+        { code: '002', name: 'Profesional', text: null, reference: null },
+        { code: '006', name: 'Ninguno', text: null, reference: null },
+    ]
+    res.send(educationalLevels);
+});
+
+api.get('/bpop-ahorro-core/catalog/getAllProfessions',(_,res)=> {
+    res.status(200);
+    const professions = [
+        {
+            code: '001',
+            name: ' ACTUACION Y ESCRITURA DE GUIONES',
+            text: null,
+            reference: null,
+          },
+          { code: '064', name: ' BIOLOGIA', text: null, reference: null },
+          {
+            code: '089',
+            name: ' COMERCIO INTERNACIONAL Y LEGISLACION ADUANERA',
+            text: null,
+            reference: null,
+          },
+          {
+            code: '120',
+            name: ' DISEÑO DE MEDIOS INTERACTIVOS',
+            text: null,
+            reference: null,
+          },
+          {
+            code: '191',
+            name: ' GERENCIA EN SISTEMAS DE INFORMACION EN SALUD',
+            text: null,
+            reference: null,
+          },
+    ]
+    res.send(professions);
+});
+
 api.get('/bpop-ahorro-core/catalog/getAllEconomicActivites',(_,res)=> {
     res.status(200);
     const economicActivities = [
