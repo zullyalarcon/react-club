@@ -152,6 +152,18 @@ api.post('/bpop-ahorro-core/account/save',(_,res)=> {
     res.send(data);
 });
 
+api.post('/bpop-ahorro-core/customer/saveCrm',(_,res)=> {
+    res.status(200);
+    const data = { status: 'true', detail: 'save'};
+    res.send(data);
+});
+
+api.post('/bpop-ahorro-core/customer/save',(_,res)=> {
+    res.status(200);
+    const data = { status: 'true', detail: 'save'};
+    res.send(data);
+});
+
 api.get('/bpop-ahorro-core/catalog/getAgreements/:type',(req,res)=> {
     res.status(200);
     switch (req.params.type) {
