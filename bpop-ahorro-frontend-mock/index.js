@@ -158,6 +158,18 @@ api.post('/bpop-ahorro-core/customer/saveCrm',(_,res)=> {
     res.send(data);
 });
 
+api.post('/bpop-ahorro-core/customer/query',(_,res)=> {
+    res.status(200);
+    const data = { status: 'true', detail: 'save'};
+    res.send(data);
+});
+
+api.post('/bpop-ahorro-core/customer/replicateSFB',(_,res)=> {
+    res.status(200);
+    const data = { status: 'TRUE', detail: 'save'};
+    res.send(data);
+});
+
 api.post('/bpop-ahorro-core/customer/save',(_,res)=> {
     res.status(200);
     const data = { status: 'true', detail: 'save'};
