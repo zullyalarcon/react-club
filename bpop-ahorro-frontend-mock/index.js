@@ -154,7 +154,7 @@ api.post('/bpop-ahorro-core/account/save',(_,res)=> {
 
 api.post('/bpop-ahorro-core/customer/saveCrm',(_,res)=> {
     res.status(200);
-    const data = { status: 'true', detail: 'save'};
+    const data = { status: '0', detail: 'save'};
     res.send(data);
 });
 
