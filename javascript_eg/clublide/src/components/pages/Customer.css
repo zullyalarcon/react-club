@@ -1,0 +1,116 @@
+.customer {
+    height: calc(100vh - 70px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    transition: ease-in .2s;
+}
+.customer > .content {
+    display: grid;
+    align-items: center;
+    padding: 5% 7%;
+}
+
+.customer > .content > .customer-title {
+    text-transform: uppercase;
+    font-size: 2.7em;
+    color: #24268c;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 0
+}
+.customer > .content > .customer-subtitle {
+    letter-spacing: -1px;
+    line-height: 1.1px;
+    font-size: 1.3em;
+}
+.customer > .content > .customer-body {
+    margin-top: 0;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+            transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+    }
+}
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    display: inline-flex;
+    margin-top: 5%;
+}
+.slider::before, .slider::after {
+    background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: auto;
+    position: absolute;
+    width: 20%;
+    z-index: 2;
+}
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: -webkit-box;
+    display: flex;
+    width: calc(20% * 10);
+}
+.slider .slide {
+    height: auto;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.slider .slide img{
+    max-height: 150px;
+    max-width: 200px;
+}
+
+.customer > .arrowDown {
+    margin: 0 auto;
+    display: flex;
+}
+
+@media (max-width: 640px) { 
+    .customer {
+        height: auto;
+        padding: 0;
+    }
+    .customer > .content > .customer-title {
+        font-size: 1.9em;
+        line-height: normal
+    }
+    .customer > .content > .customer-subtitle {
+        font-size: 1.5em;
+        line-height: normal;
+    }
+    .slider .slide {
+        width: 100%;
+    }
+    .customer > .arrowDown {
+        display: none
+    }
+}

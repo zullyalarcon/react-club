@@ -1,0 +1,126 @@
+.single-content.form-contact {
+    font-size: 1.9em;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.form-contact > .single-content__title {
+    padding: 0 0 3% 0;
+    letter-spacing: -1px
+}
+.form-contact > .single-content__description ul {
+    width: 50%;
+    float: right;
+    justify-content: space-around;
+    font-size: .55em;
+}
+.form-contact > .single-content__description ul li {
+    padding: 10px 0
+}
+.form-contact > .single-content__description ul li > strong {
+    color: #24268c;
+    width: 100%;
+}
+.form-contact > .social-networks {
+    padding-top: 3%
+}
+.form-contact a.social-link {
+    padding: 6px 15px
+}
+.form-contact a.social-link.youtube > img,
+.form-contact a.social-link.linkedin > img {
+    height: 32px;
+    width: 32px;
+}
+.form-contact a.social-link.youtube,
+.form-contact a.social-link.linkedin {
+    padding: 5px 9px;
+    align-content: center;
+    display: grid;
+}
+.form-contact a.social-link.linkedin {
+    align-content: baseline;
+}
+.form-contact > .single-content__title > .subtitle-post {
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #24268c;
+}
+.form-contact > .validate {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: .65em;
+    max-width: 50%;
+    float: left;
+    margin: 0 auto;
+}
+.mc-field-group {
+    width: 50%;
+    padding: 1.5% 1%;
+    float: left;
+}
+.mc-field-group > label {
+    display: none;
+}
+.mc-field-group > input {
+    width: 100%;
+    height: 45px;
+    padding: 0 5px;
+    font-size: .7em;
+    font-weight: 300
+}
+.message > textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0 5px;
+    font-size: .7em;
+    font-weight: 300;
+    border: 1px solid #ececec
+}
+.message {
+    width: 100%;
+    display: inline-block
+}
+.response {
+    display: none
+}
+.input-x {
+    position: absolute;
+    left: -5000px
+}
+input.button {
+    border-radius: 14px;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: .9em;
+    padding: 7px 20px;
+    margin: 0 25%;
+    background-image: linear-gradient(to left, #24268c, #3f42cb);
+}
+
+@media (max-width: 640px) {
+    .form-contact {
+        display: inline-grid
+    }
+    .form-contact > .single-content__title > .title-post {
+        font-size: .95em;
+    }
+    .form-contact > .single-content__title > .subtitle-post {
+        font-size: 1em;
+    }
+    .form-contact > .validate  {
+        max-width: 100%
+    }
+    .form-contact > .single-content__description ul {
+        width: 100%
+    }
+    .mc-field-group {
+        width: 100%;
+    }
+    .mc-field-group > input {
+        border: 1px solid #ececec
+    }
+}

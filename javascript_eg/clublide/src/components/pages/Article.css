@@ -1,0 +1,90 @@
+.article {
+    height: 100%;
+    padding: 2%;
+}
+.article > .logo {
+    text-align: initial
+}
+.article > .logo img {
+    height: 70px;
+}
+
+.article > .content {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-end;
+    align-items: center;
+}
+
+.article.team-angelica {
+    background-color:#E8F0F3
+}
+
+.article.team-angelica > .content > .text {
+    order: 1
+}
+.article.team-angelica > .content > .article-content__img {
+    order: 0
+}
+
+.article.team-angelica > .content > .article-content__img > img{
+    max-width: 500px;
+}
+
+.content > .text {
+    font-size: .65em;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.content > .text > .lead,
+.content > .text > .article-content__title {
+    color: #24268c
+}
+
+.content > .text > .article-content__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.7em;
+}
+.content > .text > .article-content__subtitle {
+    font-size: 1.3em;
+}
+
+.content > .text > .article-content__description {
+    font-size: .70em;
+}
+
+.article.team-alejandro > .content > .text {
+    order: 1
+}
+.article.team-alejandro > .content > .article-content__img {
+    order: 0
+}
+
+.article.team-alejandro > .content > .article-content__img img {
+   max-height: 450px;
+}
+
+@media (max-width: 640px) {
+    .article  {
+        height: auto;
+    }
+    .article > .content {
+        display: inline;
+    }
+
+    .article > .content > .article-content__img img {
+        width: 100%;
+    }
+    .content > .text > .article-content__title {
+        font-size: 1.1em;
+    }
+    .content > .text > .article-content__subtitle {
+        font-size: .9em;
+    }
+    
+    .content > .text > .article-content__description {
+        font-size: .9em;
+    }
+}

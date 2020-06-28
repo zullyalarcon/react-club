@@ -1,0 +1,70 @@
+.video {
+    height: calc(100vh - 70px);
+    padding: 5%;
+    background: url('https://clubliderazgo.com/wp-content/uploads/2020/04/advice-advise-advisor-7096_2x-e1588546682952.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: relative;
+}
+
+.video > .arrowDown {
+    margin: 0 auto;
+    display: flex;
+}
+
+.video > .content > .item-background {
+    height: 250px;
+    width: 32.333%;
+    float: left;
+    margin: 1% .5%;
+    background-color: #ffffff;
+    background-size: contain;
+    background-position: -25px 0;
+    background-repeat: no-repeat;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 4% 0;
+}
+
+.video > .content > .item-background > .item-title {
+    text-align: right;
+    float: right;
+    color: #24268c;
+    font-size: 1.15em;
+    font-weight: 600;
+    letter-spacing: -1px;
+    width: 45%;
+}
+
+.video > .content > .item-background > .item-link { 
+    text-align: right;
+    float: right;
+    color: orange;
+    font-size: .8em;
+    font-weight: 700;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 0 4.5em;
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .video {
+        height: auto;
+        display: inline-block;
+    }
+    .video > .content > .item-background {
+        width: 100%;
+        background-size: 160px 150px;
+        background-position: 0% 100%;
+        height: 150px;
+    }
+    .video > .content > .item-background > .item-title {
+        font-size: .85em;
+        width: 50%;
+    }
+    .video > .arrowDown {
+        display: none;
+    }
+}

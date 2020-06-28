@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #ffffff;
+}
+
+code {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a, a:active, a:link, a:hover {
+  text-decoration: none;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: #24268c;
+}
+
+.logo {
+  font-size: 1.4em;
+}
+
+.logo img {
+  height: 53px;
+  width: auto;
+  vertical-align: middle;
+}
+
+ul.social-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  margin: 5px;
+  display: inline-flex;
+}
+
+.social-item .social-link {
+  border-radius: 50%;
+  border: 1px solid #24268c;
+  padding: 13px 15px;
+  margin: 3px 5px;
+}
+
+.social-link img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-link.youtube > img,
+.social-link.linkedin > img {
+  height: 32px;
+  width: 32px;
+}
+.social-link.youtube,
+.social-link.linkedin {
+  padding: 5px 9px;
+  align-content: center;
+  display: grid;
+}
+.social-link.linkedin {
+  align-content: baseline;
+}
+
+.header-bar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  justify-content: space-evenly;
+  z-index: 2
+}
+
+.header-bar.sticky + .content {
+  padding-top: 90px;
+}
+
+.arrowDown {
+  width: auto;
+  height: 35px;
+  margin: 1% 0 0;
+}
+
+.social-networks.sticky {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  justify-content: space-evenly;
+  z-index: 2
+}
+
+@media (max-width: 640px) {
+  .app-header {
+    justify-content: center;
+    height: 65px;
+  }
+  .logo {
+    font-size: 1.2em;
+  }
+  .logo img {
+    height: 45px;
+  }
+  ul.social-nav {
+    padding: 0;
+    margin: 0
+  }
+  .social-item .social-link {
+    padding: 11px 6px 9px;
+    width: 45px;
+    height: 45px;
+    align-content: flex-end;
+  }
+  .sticky { 
+    height: 60px;
+  }
+  .arrowDown {
+    display: none;
+  }
+}
+

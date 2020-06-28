@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="129.29" height="129.29" viewBox="0 0 129.29 129.29">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#24268c}
+        </style>
+    </defs>
+    <g id="prefix__speech" transform="translate(-1 -1)">
+        <path id="prefix__Trazado_553" d="M59.621 107.351V80.242h2.085a8.35 8.35 0 0 0 8.342-8.342V55.218A25.041 25.041 0 0 0 53.83 31.825a16.683 16.683 0 1 0-17.613 0A25.041 25.041 0 0 0 20 55.218V71.9a8.35 8.35 0 0 0 8.341 8.341h2.085v27.109a8.307 8.307 0 0 0 14.6 5.459 8.307 8.307 0 0 0 14.6-5.459zM47.065 52.566l-2.042 3.063-2.042-3.065 1.2-18.157c.279-.01.555-.042.838-.042s.559.031.84.042zM32.512 17.683a12.512 12.512 0 1 1 12.512 12.511 12.524 12.524 0 0 1-12.512-12.511zm22.938 89.668a4.171 4.171 0 1 1-8.341 0V69.815h-4.171v37.536a4.171 4.171 0 0 1-8.341 0V46.877h-4.17v29.194h-2.086a4.175 4.175 0 0 1-4.17-4.171V55.218a20.871 20.871 0 0 1 15.792-20.207L38.724 53.7l6.3 9.449 6.3-9.446-1.239-18.689a20.867 20.867 0 0 1 15.792 20.2V71.9a4.175 4.175 0 0 1-4.171 4.171h-2.085V46.877H55.45z" class="prefix__cls-1" data-name="Trazado 553" transform="translate(20.621)"/>
+        <path id="prefix__Trazado_554" d="M78.6 52.908a12.512 12.512 0 1 0-16.472 0 18.77 18.77 0 0 0-5.728 3.208 12.489 12.489 0 0 0-6.781 21.817A18.787 18.787 0 0 0 37 95.645v2.085h41.706v-2.085a18.787 18.787 0 0 0-12.618-17.713 12.538 12.538 0 0 0 3.547-5.226h21.583v-2.085A18.787 18.787 0 0 0 78.6 52.908zm-8.235-17.737a8.341 8.341 0 1 1-8.341 8.341 8.35 8.35 0 0 1 8.341-8.341zM59.938 81.048a14.62 14.62 0 0 1 14.45 12.511H41.319a14.618 14.618 0 0 1 14.449-12.511zm-2.085-4.171a8.341 8.341 0 1 1 8.341-8.341 8.35 8.35 0 0 1-8.341 8.341zm12.512-8.341a12.523 12.523 0 0 0-7.505-11.459 14.588 14.588 0 0 1 5.42-1.053h4.17A14.62 14.62 0 0 1 86.9 68.536z" class="prefix__cls-1" data-name="Trazado 554" transform="translate(39.071 32.559)"/>
+        <path id="prefix__Trazado_555" d="M42.6 77.932a12.489 12.489 0 0 0-6.781-21.817 18.635 18.635 0 0 0-5.728-3.209 12.512 12.512 0 1 0-16.472 0A18.787 18.787 0 0 0 1 70.621v2.085h21.583a12.538 12.538 0 0 0 3.547 5.226 18.787 18.787 0 0 0-12.618 17.713v2.085h41.706v-2.085A18.787 18.787 0 0 0 42.6 77.932zM21.853 35.171a8.341 8.341 0 1 1-8.341 8.341 8.35 8.35 0 0 1 8.341-8.341zm0 33.365H5.319a14.618 14.618 0 0 1 14.449-12.512h4.171a14.591 14.591 0 0 1 5.422 1.053 12.522 12.522 0 0 0-7.507 11.459zm12.512-8.341a8.341 8.341 0 1 1-8.341 8.341 8.35 8.35 0 0 1 8.341-8.342zM17.831 93.559A14.618 14.618 0 0 1 32.28 81.048h4.17A14.62 14.62 0 0 1 50.9 93.559z" class="prefix__cls-1" data-name="Trazado 555" transform="translate(0 32.559)"/>
+        <path id="prefix__Trazado_556" d="M79.536 11.427A10.438 10.438 0 0 0 69.109 1H52.427A10.438 10.438 0 0 0 42 11.427v10.426h27.109a10.438 10.438 0 0 0 10.427-10.426zm-33.365 0a6.264 6.264 0 0 1 6.256-6.256h16.682a6.256 6.256 0 0 1 0 12.512H46.171z" class="prefix__cls-1" data-name="Trazado 556" transform="translate(44.498)"/>
+        <path id="prefix__Trazado_557" d="M46 5h4.171v4.171H46z" class="prefix__cls-1" data-name="Trazado 557" transform="translate(48.839 4.341)"/>
+        <path id="prefix__Trazado_558" d="M50 5h4.171v4.171H50z" class="prefix__cls-1" data-name="Trazado 558" transform="translate(53.18 4.341)"/>
+        <path id="prefix__Trazado_559" d="M54 5h4.171v4.171H54z" class="prefix__cls-1" data-name="Trazado 559" transform="translate(57.522 4.341)"/>
+        <path id="prefix__Trazado_560" d="M14.427 21.853h27.109V11.427A10.438 10.438 0 0 0 31.109 1H14.427a10.427 10.427 0 1 0 0 20.853zm0-16.683h16.682a6.264 6.264 0 0 1 6.256 6.256v6.256H14.427a6.256 6.256 0 1 1 0-12.512z" class="prefix__cls-1" data-name="Trazado 560" transform="translate(3.256)"/>
+        <path id="prefix__Trazado_561" d="M16 5h4.171v4.171H16z" class="prefix__cls-1" data-name="Trazado 561" transform="translate(16.28 4.341)"/>
+        <path id="prefix__Trazado_562" d="M12 5h4.171v4.171H12z" class="prefix__cls-1" data-name="Trazado 562" transform="translate(11.938 4.341)"/>
+        <path id="prefix__Trazado_563" d="M8 5h4.171v4.171H8z" class="prefix__cls-1" data-name="Trazado 563" transform="translate(7.597 4.341)"/>
+        <path id="prefix__Trazado_564" d="M55.427 13A10.438 10.438 0 0 0 45 23.427v10.426h27.109a10.427 10.427 0 1 0 0-20.853zm22.938 10.427a6.264 6.264 0 0 1-6.256 6.256H49.171v-6.256a6.264 6.264 0 0 1 6.256-6.256h16.682a6.264 6.264 0 0 1 6.256 6.256z" class="prefix__cls-1" data-name="Trazado 564" transform="translate(47.754 13.024)"/>
+        <path id="prefix__Trazado_565" d="M49 17h4.171v4.171H49z" class="prefix__cls-1" data-name="Trazado 565" transform="translate(52.095 17.365)"/>
+        <path id="prefix__Trazado_566" d="M53 17h4.171v4.171H53z" class="prefix__cls-1" data-name="Trazado 566" transform="translate(56.436 17.365)"/>
+        <path id="prefix__Trazado_567" d="M57 17h4.171v4.171H57z" class="prefix__cls-1" data-name="Trazado 567" transform="translate(60.778 17.365)"/>
+        <path id="prefix__Trazado_568" d="M11.427 33.853h27.109V23.427A10.438 10.438 0 0 0 28.109 13H11.427a10.427 10.427 0 1 0 0 20.853zm0-16.683h16.682a6.264 6.264 0 0 1 6.256 6.256v6.256H11.427a6.256 6.256 0 1 1 0-12.512z" class="prefix__cls-1" data-name="Trazado 568" transform="translate(0 13.024)"/>
+        <path id="prefix__Trazado_569" d="M13 17h4.171v4.171H13z" class="prefix__cls-1" data-name="Trazado 569" transform="translate(13.024 17.365)"/>
+        <path id="prefix__Trazado_570" d="M9 17h4.171v4.171H9z" class="prefix__cls-1" data-name="Trazado 570" transform="translate(8.683 17.365)"/>
+        <path id="prefix__Trazado_571" d="M5 17h4.171v4.171H5z" class="prefix__cls-1" data-name="Trazado 571" transform="translate(4.341 17.365)"/>
+    </g>
+</svg>

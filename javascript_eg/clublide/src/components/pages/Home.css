@@ -1,0 +1,72 @@
+.app-home {
+    height: calc(100vh - 130px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 3% 0 0
+}
+
+.title {
+    color: #24268c;
+    font-size: 2.5rem;
+    padding: 0;
+}
+
+.title img {
+    width: 67px;
+    height: 67px;
+    vertical-align: middle;
+}
+
+.subtitle {
+    color: #f29a38;
+    font-size: 1.8rem;
+    letter-spacing: -1.75px;
+}
+
+.subtitle p {
+    margin: 0
+}
+
+.subtitle strong {
+    font-weight: 700;
+}
+
+.body {
+    padding: 2% 0;
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.services > .arrowDown {
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    .app-home {
+        height: auto
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+    .title img {
+        width: 45px;
+        height: 45px;
+    }
+    .subtitle {
+        font-size: 1.3rem;
+    }
+    .body {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .services > .arrowDown {
+        display: none;
+    }
+}

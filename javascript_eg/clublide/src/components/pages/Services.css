@@ -1,0 +1,66 @@
+.servicesD {
+    margin: 2% 0;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    position: relative;
+    height: calc(100vh - 70px);
+}
+
+.servicesD .title {
+    transform: rotate(-90deg);
+    width: auto;
+    left: -190px;
+    margin-top: 300px;
+    position: absolute;
+}
+
+.servicesD .lists {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-gap: 0;
+    float: right;
+}
+
+.servicesD > .lists > .services-more {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.servicesD > .lists > .services-more > a { 
+    border: 2px solid #24268c;
+    border-radius: 14px;
+    color: #24268c;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 10px;
+}
+
+@media (max-width: 640px) {
+    .servicesD {
+        margin: 0 auto;
+        display: inline-table;
+        width: 100%;
+        height: auto
+    }
+
+    .servicesD .title {
+        transform: rotate(0);
+        margin-top: 0;
+        width: auto;
+        left: 0;
+        text-align: center;
+        position: relative;
+    }
+
+    .servicesD .lists {
+        display: inline;
+        width: auto;
+    }
+
+    .servicesD .lists > .list-item {
+        margin: 15px;
+    }
+}
